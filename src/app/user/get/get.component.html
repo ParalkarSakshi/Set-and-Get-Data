@@ -1,0 +1,29 @@
+<div *ngIf="submittedData">
+    <h1>Submitted Data:</h1>
+    <p><strong>Name:</strong>{{submittedData.name}}</p>
+    <p><strong>Email:</strong>{{submittedData.email}}</p>
+    <p><strong>Password:</strong>{{submittedData.password}}</p>
+</div>   
+
+
+
+<!-- This logic doesn't work , we can only get single data not multiple data -->
+<!-- <div *ngIf="submittedData">
+    <h1>Submitted Data:</h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="The table elements">
+            <td>{{item.submittedData.name}}</td>
+            <td>{{item.submittedData.email}}</td>
+            <td>{{item.submittedData.password}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div> -->
